@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class fibonacci {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n;
+        int p; // he cambiado el nombre de la variable de n a p (Sergio Torregrosa)
         System.out.print("Introduce el término que quieres saber: ");
-        n = sc.nextInt();
-        fibo(n); //llamada a la función
-        long resultado = fibo(n); //el resultado será la "solución" que nos da la función que acabamos de llamar
-        System.out.println("El término " + n + " de la serie de Fibonacci es " + resultado);
+        p = sc.nextInt();
+        fibo(p); //llamada a la función
+        long resultado = fibo(p); //el resultado será la "solución" que nos da la función que acabamos de llamar
+        System.out.println("El término " + p + " de la serie de Fibonacci es " + resultado);
     }
     static long fibo(int n) {
         if (n <= 1) {

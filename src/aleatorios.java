@@ -3,18 +3,18 @@ import java.util.Scanner;
 public class aleatorios {
     public static void main (String [] args) {
         Scanner sc = new Scanner(System.in);
-        int min, max, cant;
+        int minimo, maximo, cantidad; //He cambiado los nombre de las variables a minimo, maximo, cantidad(Sergio Torregrosa)
         System.out.print("Introduce el número mínimo: ");
-        min = sc.nextInt();
+        minimo = sc.nextInt();
         sc.nextLine();
         System.out.print("Introduce el número máximo: ");
-        max = sc.nextInt();
+        maximo = sc.nextInt();
         sc.nextLine();
         System.out.print("Introduce la cantidad de números que quieres obetener: ");
-        cant = sc.nextInt();
+        cantidad = sc.nextInt();
         sc.nextLine();
 
-        ale(min, max, cant); /*la llamada a la función tomará en cuenta los números que se han pedido,
+        ale(minimo, maximo, cantidad); /*la llamada a la función tomará en cuenta los números que se han pedido,
         siendo así posible pedir cantidades diferentes cada vez que se use el programa*/
 
     }
